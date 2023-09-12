@@ -1,0 +1,22 @@
+{
+  "name": "jsaqa_homeworks_06",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome:headed:laptop": "cypress run --headed --browser chrome --config-file cypress.config.js",
+    "test:chrome:laptop": "cypress run --browser chrome --config-file cypress.config.js",
+    "test:chrome:headed:phone": "cypress run --headed --browser chrome --config-file cypressPhone.config.js",
+    "test:chrome:phone": "cypress run --browser chrome --config-file cypressPhone.config.js",
+    "test:firefox:headed:laptop": "cypress run --headed --browser firefox --config-file cypress.config.js",
+    "test:firefox:laptop": "cypress run --browser firefox --config-file cypress.config.js",
+    "test:firefox:headed:phone": "cypress run --headed --browser firefox --config-file cypressPhone.config.js",
+    "test:firefox:phone": "cypress run --browser firefox --config-file cypressPhone.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.1.0"
+  }
+}
