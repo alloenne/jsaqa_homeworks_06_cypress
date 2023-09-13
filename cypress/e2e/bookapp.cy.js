@@ -45,17 +45,19 @@ describe("Log in page", () => {
         });
 
         it("Add new book", () => {
-            cy.addBook("Book1", "Author1")
+            cy.addBook("Book1", "Author1");
             cy.contains("Book1").should("be.visible");
         });
 
         it("Add new book to Favorites", () => {
+            cy.addBook("Book1", "Author1");
             cy.contains("Add to favorite").first().click();
             cy.contains("Favorites").click();
             cy.contains("Delete from favorite").first().should("be.visible");
         });
 
         it("Delete book from Favorites", () => {
+            cy.addBook("Book1", "Author1");
             cy.contains("Add to favorite").first().click();
             cy.contains("Favorites").click();
             cy.contains("Delete from favorite").first().click();
